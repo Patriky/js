@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu documento</title>
+    <style>
+        body {
+            background-color: rgb(50, 23, 77);
+            color: white;
+            font: normal 17pt Arial;
+        }
+        
+        li {
+            background-color: rgb(50, 23, 77);
+            color: rgb(10, 8, 8);
+            width: 30%;
+            font: normal 17pt Arial;
+        }
+        
+        div#area {
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Hello, world!</h4>
+    <p>Criando um novo parágrafo</p>
+    <li> <strong>Teste1</strong> </li>
+    <br>
+    <button id="btred" onclick="cli(id)">Mudar bg para vermelho</button>
+    <button id="btblack" onclick="cli(id)">Mudar bg para preto</button>
+    <br><br>
+    <div id="area">
+        Interaja!
+    </div>
+    <br>
+    <p id="pd">Duração </p>
+
+    <script>
+        var a = document.getElementById('area');
+        var tempoin = null;
+        var tempoout = null
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseout', sair)
+        a.addEventListener('mouseenter', entrar)
+            //var nome = "Patriky"
+            //document.writeln(`Olá, ${nome}! Seu nome tem ${nome.length} letras.`)
+            //document.writeln("URL: " + window.document.URL);
+            //var t = document.getElementsByTagName('li')[0]
+            //document.write(t.innerHTML)
+        function cli(params) {
+            if (params == 'btred') {
+                document.body.style.background = 'red'
+            }
+            if (params == 'btblack') {
+                document.body.style.background = 'black'
+            }
+        }
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+        }
+
+        function entrar() {
+            tempoin = new Date()
+            a.innerText = 'Entrou'
+        }
+
+        function sair() {
+            tempoout = (new Date() - tempoin) / 1000
+            a.innerText = 'Saiu'
+            var res = document.getElementById('pd')
+            res.innerText = `Duração: ${tempoout}s`
+        }
+    </script>
+</body>
+
+</html>
