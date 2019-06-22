@@ -10,14 +10,25 @@
 
 <body>
     <input type="checkbox" name="cb1" id="cb1">
-    <input type="date" name="dt" id="dt">
+    <input type="date" id="bday" name="dia">
     <button id="bt" onclick="clicou()">Enviar</button>
 
-
     <script>
+        var ck = document.getElementById('cb1');
+        var hoje = new Date().toDateString();
+        console.log("Hoje: " + hoje);
+        var data2 = new Date('07/04/2017').toDateString();
+        console.log("Data2: " + data2);
+
         function clicou(params) {
-            var data = document.getElementById('dt')
-            console.log(data.value)
+            var data = document.getElementById('bday')
+            console.log("Data: " + data.value)
+            console.log("data de hoje: " + new Date().toDateString())
+            if (ck.checked) {
+                console.log("Está check!")
+            } else {
+                console.log('Não está check!')
+            }
         }
     </script>
 </body>
