@@ -21,7 +21,7 @@ section {
     width: 35%;
     margin: auto;
     /* margin: auto; centraliza*/
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473)/* */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473)/* coloca uma leve sombra escuta */
 }
 
 div {
@@ -29,7 +29,7 @@ div {
 }
 
 footer {
-    padding: 5px;
+    padding: 25px;
     color: white;
     text-align: center;
 }

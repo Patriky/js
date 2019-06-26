@@ -1,0 +1,26 @@
+body {
+    background: rgb(126, 98, 151);
+    font: normal 20px Arial;
+    padding: 30px;
+}
+
+header {
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473)/* coloca uma leve sombra escuta */
+}
+
+footer {
+    padding: 10px;
+    font: normal 15px Verdana;
+    text-align: center;
+}
