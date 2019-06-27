@@ -1,0 +1,30 @@
+body {
+    background: rgb(179, 147, 89);
+    font: normal 15px Arial;
+    margin: auto;
+}
+
+header {
+    color: white;
+    margin: auto;
+    /* */
+    text-align: center;
+    /* deixa o texto centralizado */
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    /* border-radius: deixa a borda arredondada*/
+    padding: 10px;
+    width: 35%;
+    margin: auto;
+    /* margin: auto; centraliza*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473)/* coloca uma leve sombra escuta */
+}
+
+footer {
+    padding: 25px;
+    color: white;
+    text-align: center;
+}
