@@ -28,3 +28,21 @@ footer {
     color: white;
     text-align: center;
 }
+
+#num {
+    width: 70px;
+    background-color: rgb(179, 147, 89);
+}
+
+#lista {
+    background-color: rgb(179, 147, 89);
+    width: 110px;
+}
+
+#bt_finalizar {
+    margin: auto;
+    width: 110px;
+    /* */
+    text-align: center;
+    /* deixa o texto centralizado */
+}
