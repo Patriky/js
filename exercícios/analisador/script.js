@@ -26,6 +26,8 @@ function adicionar() {
     } else {
         alert("Insira um número!")
     }
+    num.value = ''
+    num.focus(); // Ao clicar no botao, ele limpa e depois deixa o mouse em cima do campo num
 }
 
 function limpar() {
